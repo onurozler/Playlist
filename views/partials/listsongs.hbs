@@ -1,0 +1,40 @@
+<table class="ui table">
+  <thead>
+    <tr>
+      <th>Song</th>
+      <th>Artist</th>
+      <th>Album</th>
+      <th>Duration</th>
+       <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each playlist.songs}}
+      <tr>
+        <td>
+          {{artist}}
+        </td>
+        <td>
+          {{songname}}
+        </td>
+        <td>
+          {{album}}
+        </td>
+        <td>
+          {{duration}}
+        </td>
+        <td>
+          <a href="/playlist/{{../playlist.id}}/deletesong/{{id}}" class="ui icon button">
+            <i class="icon trash"></i>
+          </a>
+        </td>
+        <td>
+          <a class="ui icon button">
+            Details
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

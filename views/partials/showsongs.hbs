@@ -1,0 +1,34 @@
+<table class="ui table">
+  <thead>
+    <tr>
+      <th>Artist</th>
+      <th>Song Name</th>
+      <th>Album</th>
+      <th>Duration</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each playlist}}
+      <tr>
+        <td>
+          {{artist}}
+        </td>
+       <td>
+          {{songname}}
+        </td>
+        <td>
+          {{album}}
+        </td>
+       <td>
+          {{duration}}
+        </td>
+        <td>
+          <a href="/playlist/3d47650d-e2eb-4045-bf04-f5282a26c7eb/addsong/{{id}}" class="ui icon button">
+            ADD
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
