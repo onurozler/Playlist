@@ -1,0 +1,34 @@
+{
+  "name": "projectplaylist",
+  "version": "0.0.1",
+  "description": "playlist project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-fileupload": "^0.4.0",
+    "express-handlebars": "^3.0.0",
+    "fs-extra": "^6.0.1",
+    "lodash": "^4.17.10",
+    "lowdb": "^1.0.0",
+    "uuid": "^3.2.1",
+    "winston": "^2.4.2",
+    "spotify-web-api-node": "^2.3.6"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://github.com/wit-hdip-comp-sci-2018/playlist-4"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}

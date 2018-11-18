@@ -1,0 +1,39 @@
+{
+  "songs": [
+    {
+      "id": "1",
+      "songname": "Sad But True",
+      "artist": "Metallica",
+       "album": "Black Album",
+      "duration": 4
+    },
+     {
+      "id": "2",
+      "songname": "Tornado of Souls",
+      "artist": "Megadeth",
+       "album": "Rust in Peace",
+      "duration": 4
+    },
+    {
+      "id": "3",
+      "songname": "Geçmişin Yükü",
+      "artist": "Pentagram",
+      "album": "MMXII",
+      "duration": 4
+    },
+    {
+      "id": "4",
+      "songname": "Senden Daha Güzel",
+      "artist": "Duman",
+      "album": "Duman II",
+      "duration": 4
+    },
+    {
+      "id": "5",
+      "songname": "Araf",
+      "artist": "Mor ve Ötesi",
+      "album": "Masumiyetin Ziyan Olmaz",
+      "duration": 4
+    }
+  ]
+}

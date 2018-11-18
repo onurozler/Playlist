@@ -1,0 +1,26 @@
+{
+  "playlistCollection": [
+    {
+      "id": "3d47650d-e2eb-4045-bf04-f5282a26c7eb",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "title": "Rock-Metal",
+      "songs": [
+        {
+          "id": "1",
+          "songname": "Sad But True",
+          "artist": "Metallica",
+          "album": "Black Album",
+          "duration": 4
+        },
+        {
+          "id": "3",
+          "songname": "Geçmişin Yükü",
+          "artist": "Pentagram",
+          "album": "MMXII",
+          "duration": 4
+        }
+      ],
+      "duration": 6
+    }
+  ]
+}
