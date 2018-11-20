@@ -1,4 +1,4 @@
-Welcome to the Playlist 4
+Welcome to the Playlist Project
 =========================
 
-Version 4 of the Playlist application
+

@@ -1,19 +1,20 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const spotify = require('../models/spotify');
 
 const about = {
   
   index(request, response) {
+    
     logger.info('about rendering');
     const viewData = {
       title: 'spotifyview',
-      content: spotify.getSong()
+      content: 'test'
     };
    
     response.render('about', viewData);
   },
+  
   
 };
 
