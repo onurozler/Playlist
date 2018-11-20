@@ -2,6 +2,7 @@
 
 const logger = require('../utils/logger');
 const playlistStore = require('../models/songs-store');
+const playlistStor = require('../models/playlist-store');
 const uuid = require('uuid');
 
 const playlist = {
@@ -11,6 +12,7 @@ const playlist = {
     const viewData = {
       title: 'Playlist',
       playlist: playlistStore.getAllPlaylists(),
+      getplaylist: playlistStor.getAllPlaylists()
     };
     response.render('songs', viewData);
   },

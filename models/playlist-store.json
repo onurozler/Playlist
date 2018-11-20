@@ -6,21 +6,41 @@
       "title": "Rock-Metal",
       "songs": [
         {
-          "id": "1",
-          "songname": "Sad But True",
-          "artist": "Metallica",
-          "album": "Black Album",
-          "duration": 4
-        },
-        {
           "id": "3",
           "songname": "Geçmişin Yükü",
           "artist": "Pentagram",
           "album": "MMXII",
           "duration": 4
+        },
+        {
+          "id": "4",
+          "songname": "Senden Daha Güzel",
+          "artist": "Duman",
+          "album": "Duman II",
+          "duration": 4
+        },
+        {
+          "id": "5",
+          "songname": "Araf",
+          "artist": "Mor ve Ötesi",
+          "album": "Masumiyetin Ziyan Olmaz",
+          "duration": 4
+        },
+        {
+          "id": "1",
+          "songname": "Sad But True",
+          "artist": "Metallica",
+          "album": "Black Album",
+          "duration": 4
         }
       ],
       "duration": 6
+    },
+    {
+      "id": "65b313e7-e08f-475a-9210-e37469d0629a",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "title": "Sarki",
+      "songs": []
     }
   ]
 }

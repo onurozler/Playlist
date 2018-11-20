@@ -19,35 +19,21 @@ spotifyApi.clientCredentialsGrant()
   });
 
 const spotify = {
-
-
-  getArtist()
+  
+  getArtist(artist)
   {  
-
-    spotifyApi.getArtistAlbums('43ZHCT0cAZBISjO8DG9PnE').then(
-  function(data) {
-    return data.body.toString();
-  },
-  function(err) {
-    console.error(err);
-    }
-    );
+    return spotifyApi.getArtist(artist);
   },
   
-  getSong()
+  getSong(songName)
   {
-    return spotifyApi.searchTracks('track:Dancing Queen', {limit: 1}).then(function(data) 
-    {
-    
-      // Send the first (only) track obje
-     Promise.resolve(data.body.tracks.items[0].name);
-    
-    }, function(err) {
-      console.error(err);
-    });
-    
+    return spotifyApi.searchTracks('track:'+songName, {limit: 1});
   },
   
+  getAudioFeatures(songName)
+  {
+    return spotifyApi.searchTracks(songName);
+  },
 };
 
 module.exports = spotify;
