@@ -1,25 +1,28 @@
-<table class="ui table">
+
+
+<table class="ui selectable inverted table">
   <thead>
     <tr>
-      <th>Artist</th>
+      
+      <th >Artist</th>
       <th>Song Name</th>
       <th>Album</th>
       <th>Duration</th>
       <th></th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
 
-  
-  
-  
   <tbody>
-    {{#each playlist}}
+    {{#each getsongs}}
       <tr>
         <td>
-          {{artist}}
+          <a href="/artistabout/{{id}}" >{{artist}}</a>
         </td>
        <td>
-          {{songname}}
+         <a href="/songabout/{{id}}" >{{songname}}</a>
+          
         </td>
         <td>
           {{album}}
@@ -27,27 +30,70 @@
        <td>
           {{duration}}
         </td>
+        
+        <td>
+            <a href="/songabout/{{id}}" id="repeat_track" >Play</a>
+        </td>
+        
         <td>       
-          
-   
-   <div class="dropdown">
+
+  <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">ADD</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="/playlist/3d47650d-e2eb-4045-bf04-f5282a26c7eb/addsong/{{id}}" >Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+     <div id="myDropdown" class="dropdown-content">
+        {{#each ../playlist}}
+          <a href="/playlist/{{id}}/addsong/{{../id}}" >{{title}}</a>
+        {{/each}}
+       
+       <form class="ui stacked segment form" action="/dashboard/addplaylist/{{id}}" method="POST">
+           <div class="field">
+           <input placeholder="New Playlist" type="text" name="title" class="txtin">
+           </div>
+           <button class="ui blue submit button">Add Playlist</button>
+       </form>
+       
   </div>
+            
+            
   </div>
-  
+          
         </td>
         
       </tr>
     {{/each}}
   </tbody>
 </table>
+<div class="underlay-photo"></div>
+<div class="underlay-black"></div> 
 
 <style>
 
+[class*=underlay] {
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+}
+.underlay-photo {
+  animation: hue-rotate 6s infinite;
+  background: url('http://arturonavarro.com/wp-content/uploads/2015/08/concert-bw.jpg');
+  background-size: cover;
+  -webkit-filter: grayscale(30%);
+  z-index: -1;
+}
+.underlay-black {
+  background: rgba(0,0,0,0.7);
+  z-index: -1;
+}
+
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: grayscale(30%) hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: grayscale(30%) hue-rotate(360deg);
+  }
+}
 .dropbtn {
     background-color: #3498DB;
     color: white;
@@ -103,7 +149,7 @@ function myFunction() {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+  if (!event.target.matches('.dropbtn') && !event.target.matches('.txtin')) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;

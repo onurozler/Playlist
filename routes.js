@@ -9,8 +9,9 @@ const about = require('./controllers/about.js');
 const playlist = require('./controllers/playlist.js');
 const songs = require('./controllers/songs.js');
 const songabout = require('./controllers/songabout.js');
+const artistabout = require('./controllers/artistabout.js');
 
-router.get('/', accounts.index);
+router.get('/', accounts.login);
 router.get('/login', accounts.login);
 router.get('/signup', accounts.signup);
 router.get('/logout', accounts.logout);
@@ -18,10 +19,12 @@ router.post('/register', accounts.register);
 router.post('/authenticate', accounts.authenticate);
 
 router.get('/songs', songs.index);
+router.get('/artistabout/:id', artistabout.index);
 
 router.get('/dashboard', dashboard.index);
 router.get('/dashboard/deleteplaylist/:id', dashboard.deletePlaylist);
 router.post('/dashboard/addplaylist', dashboard.addPlaylist);
+router.post('/dashboard/addplaylist/:id', dashboard.addPlaylistName);
 
 router.get('/songabout/:id', songabout.index);
 

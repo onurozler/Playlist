@@ -20,20 +20,16 @@ spotifyApi.clientCredentialsGrant()
 
 const spotify = {
   
-  getArtist(artist)
-  {  
-    return spotifyApi.getArtist(artist);
-  },
   
   getSong(songName)
   {
     return spotifyApi.searchTracks('track:'+songName, {limit: 1});
   },
-  
-  getAudioFeatures(songName)
-  {
-    return spotifyApi.searchTracks(songName);
+  getArtist(artist)
+  { 
+    return spotifyApi.searchArtists('artist:'+artist,  {limit: 1});
   },
+  
 };
 
 module.exports = spotify;

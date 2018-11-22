@@ -1,8 +1,32 @@
 {{> menu}}
 
-<section class="ui center aligned middle aligned segment">
+<section class="ui inverted center aligned middle aligned segment">
   <h2 class="ui header">
     {{playlist.title}}
   </h2>
   {{> listsongs}}
 </section>
+<div class="underlay-photo"></div>
+<div class="underlay-black"></div> 
+
+<style>
+[class*=underlay] {
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+}
+.underlay-photo {
+  animation: hue-rotate 6s infinite;
+  background: url('http://arturonavarro.com/wp-content/uploads/2015/08/concert-bw.jpg');
+  background-size: cover;
+  -webkit-filter: grayscale(30%);
+  z-index: -1;
+}
+.underlay-black {
+  background: rgba(0,0,0,0.7);
+  z-index: -1;
+}
+
+</style>

@@ -10,26 +10,22 @@ const about = {
     
     const songId = request.params.id;
     const song = playlistStore.getPlaylist(songId);
-    const info = spotify.getSong(song.songname);
+    const info = spotify.getArtist(song.artist);
+    
     logger.info('about rendering');  
+  
     info.then(
     function(data) {
-       
-      
-      
+       console.log(data.body.artists.items[0]);
       const viewData = {
-      title: data.body.tracks.items[0].name,
-      artist: data.body.tracks.items[0].artists[0].name,
-      albumname: data.body.tracks.items[0].album.name,
-      albumimage: data.body.tracks.items[0].album.images[1].url,
-      previewurl: data.body.tracks.items[0].preview_url
+        title : data.body.artists.items[0].name,
+        genres: data.body.artists.items[0].genres,
+        followers : data.body.artists.items[0].followers.total,
+        artistimage : data.body.artists.items[0].images[1].url,
     };
-      response.render('songabout', viewData);
+      response.render('artistabout', viewData);
     });
-
   },
-  
-
   
   
 };
