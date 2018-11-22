@@ -3,6 +3,7 @@
 const accounts = require ('./accounts.js');
 const logger = require('../utils/logger');
 const playlistStore = require('../models/playlist-store');
+const songStore = require('../models/songs-store');
 const uuid = require('uuid');
 
 const dashboard = {
@@ -21,6 +22,21 @@ const dashboard = {
     const playlistId = request.params.id;
     logger.debug(`Deleting Playlist ${playlistId}`);
     playlistStore.removePlaylist(playlistId);
+    response.redirect('/dashboard');
+  },
+  
+  addPlaylistName(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    const songId = request.params.id;
+    const song = songStore.getPlaylist(songId);
+    const newPlayList = {
+      id: uuid(),
+      userid: loggedInUser.id,
+      title: request.body.title,
+      songs: [song],
+    };
+    logger.debug('created', newPlayList);
+    playlistStore.addPlaylist(newPlayList);
     response.redirect('/dashboard');
   },
 

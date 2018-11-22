@@ -11,12 +11,13 @@ const playlist = {
     logger.debug('Playlist id = ', playlistId);
     const viewData = {
       title: 'Playlist',
-      playlist: playlistStore.getAllPlaylists(),
-      getplaylist: playlistStor.getAllPlaylists()
+      getsongs: playlistStore.getAllPlaylists(),
+      playlist: playlistStor.getAllPlaylists()
     };
     response.render('songs', viewData);
   },
 
+  
   deleteSong(request, response) {
     const playlistId = request.params.id;
     const songId = request.params.songid;

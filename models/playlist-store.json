@@ -13,10 +13,10 @@
           "duration": 4
         },
         {
-          "id": "4",
-          "songname": "Senden Daha Güzel",
-          "artist": "Duman",
-          "album": "Duman II",
+          "id": "2",
+          "songname": "Tornado of Souls",
+          "artist": "Megadeth",
+          "album": "Rust in Peace",
           "duration": 4
         },
         {
@@ -24,6 +24,13 @@
           "songname": "Araf",
           "artist": "Mor ve Ötesi",
           "album": "Masumiyetin Ziyan Olmaz",
+          "duration": 4
+        },
+        {
+          "id": "1",
+          "songname": "Sad But True",
+          "artist": "Metallica",
+          "album": "Black Album",
           "duration": 4
         },
         {
@@ -40,7 +47,36 @@
       "id": "65b313e7-e08f-475a-9210-e37469d0629a",
       "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
       "title": "Sarki",
-      "songs": []
+      "songs": [
+        {
+          "id": "1",
+          "songname": "Sad But True",
+          "artist": "Metallica",
+          "album": "Black Album",
+          "duration": 4
+        },
+        {
+          "id": "1",
+          "songname": "Sad But True",
+          "artist": "Metallica",
+          "album": "Black Album",
+          "duration": 4
+        }
+      ]
+    },
+    {
+      "id": "adf99c24-e941-4428-90fb-2e84564010d8",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "title": "vedd",
+      "songs": [
+        {
+          "id": "1",
+          "songname": "Sad But True",
+          "artist": "Metallica",
+          "album": "Black Album",
+          "duration": 4
+        }
+      ]
     }
   ]
 }

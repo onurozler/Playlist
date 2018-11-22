@@ -1,5 +1,6 @@
 dependencies:
   body-parser: 1.18.3
+  bootstrap: 3.3.7
   cookie-parser: 1.4.3
   express: 4.16.4
   express-fileupload: 0.4.0
@@ -63,6 +64,12 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-WykhmP/dVTs6DyDe0FkrlWlVyLQ=
+  /bootstrap/3.3.7:
+    dev: false
+    engines:
+      node: '>=0.10.1'
+    resolution:
+      integrity: sha1-WjiTlFSfIzMIdaOxUGVldPip63E=
   /brace-expansion/1.1.11:
     dependencies:
       balanced-match: 1.0.0
@@ -855,6 +862,7 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   body-parser: ^1.18.3
+  bootstrap: ^3.3.7
   cookie-parser: ^1.4.3
   express: ^4.16.3
   express-fileupload: ^0.4.0
