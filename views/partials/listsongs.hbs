@@ -13,10 +13,10 @@
     {{#each playlist.songs}}
       <tr>
         <td>
-          {{artist}}
+          <a href="/artistabout/{{id}}">{{artist}}</a>
         </td>
         <td>
-          {{songname}}
+          <a href="/songabout/{{id}}" > {{songname}}</a>
         </td>
         <td>
           {{album}}
@@ -38,3 +38,12 @@
     {{/each}}
   </tbody>
 </table>
+
+<style>
+ a{
+    color:white;
+  }
+  a:hover{
+    color:gray;
+  }
+</style>
