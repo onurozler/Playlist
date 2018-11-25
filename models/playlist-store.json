@@ -39,6 +39,13 @@
           "artist": "Metallica",
           "album": "Black Album",
           "duration": 4
+        },
+        {
+          "id": "1",
+          "songname": "Sad But True",
+          "artist": "Metallica",
+          "album": "Black Album",
+          "duration": 4
         }
       ],
       "duration": 6
@@ -74,6 +81,34 @@
           "songname": "Sad But True",
           "artist": "Metallica",
           "album": "Black Album",
+          "duration": 4
+        },
+        {
+          "id": "3",
+          "songname": "Geçmişin Yükü",
+          "artist": "Pentagram",
+          "album": "MMXII",
+          "duration": 4
+        },
+        {
+          "id": "4",
+          "songname": "Senden Daha Güzel",
+          "artist": "Duman",
+          "album": "Duman II",
+          "duration": 4
+        }
+      ]
+    },
+    {
+      "id": "1e064aee-42a6-4091-9338-1c60b1a58373",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "title": "onur",
+      "songs": [
+        {
+          "id": "3",
+          "songname": "Geçmişin Yükü",
+          "artist": "Pentagram",
+          "album": "MMXII",
           "duration": 4
         }
       ]
