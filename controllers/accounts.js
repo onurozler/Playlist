@@ -42,6 +42,8 @@ const accounts = {
 
   authenticate(request, response) {
     const user = userstore.getUserByEmail(request.body.email);
+    
+    //user.password == request.body.password
     if (user) {
       response.cookie('playlist', user.email);
       logger.info(`logging in ${user.email}`);
