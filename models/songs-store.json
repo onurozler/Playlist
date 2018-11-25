@@ -5,28 +5,28 @@
       "songname": "Sad But True",
       "artist": "Metallica",
        "album": "Black Album",
-      "duration": 4
+      "duration": 5
     },
      {
       "id": "2",
-      "songname": "Tornado of Souls",
-      "artist": "Megadeth",
-       "album": "Rust in Peace",
+      "songname": "Serseri",
+      "artist": "Teoman",
+       "album": "Eski Bir Rüya Uğruna...",
       "duration": 4
     },
     {
       "id": "3",
-      "songname": "Geçmişin Yükü",
-      "artist": "Pentagram",
-      "album": "MMXII",
-      "duration": 4
+      "songname": "Turn The Page",
+      "artist": "Metallica",
+      "album": "Garage Inc.",
+      "duration": 6
     },
     {
       "id": "4",
       "songname": "Senden Daha Güzel",
       "artist": "Duman",
       "album": "Duman II",
-      "duration": 4
+      "duration": 3
     },
     {
       "id": "5",

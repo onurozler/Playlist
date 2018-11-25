@@ -1,18 +1,18 @@
 'use strict';
 
 const logger = require('../utils/logger');
+const accounts = require ('./accounts.js');
 const playlistStore = require('../models/songs-store');
 const playlistStor = require('../models/playlist-store');
 const uuid = require('uuid');
 
 const playlist = {
   index(request, response) {
-    const playlistId = request.params.id;
-    logger.debug('Playlist id = ', playlistId);
+    const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       title: 'Playlist',
       getsongs: playlistStore.getAllPlaylists(),
-      playlist: playlistStor.getAllPlaylists()
+      playlist: playlistStor.getUserPlaylists(loggedInUser.id)
     };
     response.render('songs', viewData);
   },
